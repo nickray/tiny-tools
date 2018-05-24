@@ -1,9 +1,8 @@
 # Tiny Tools
 
-Based on Alpine. Includes `curl`, `dig`, `nc`, `jq` and `fish` for now.
-
-Needs about 11 MB on Disk.
+Based on Alpine.  
+Includes `curl`, `dig`, `nc`, `jq`, `zsh` and a few others.
 
 ```bash
-docker run -ti giantswarm/tiny-tools sh
+kubectl run -it zshell --image nickray/tiny-tools --restart Never --rm -- zsh
 ```
